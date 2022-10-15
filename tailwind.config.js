@@ -5,7 +5,7 @@ module.exports = {
 	theme: {
 		extend: {
 			backgroundColor: {
-				"main-bg": "#FAFBFB",
+				"main-bg": "#355691",
 				"main-dark-bg": "#20232A",
 				"secondary-dark-bg": "#33373E",
 				"light-gray": "#F7F7F7",
@@ -27,8 +27,9 @@ module.exports = {
 				590: "590px",
 			},
 			colors: {
-				primary: "#171738",
-				secondary: "#0091AD",
+				primary: "#3685B5",
+				secondary: "#444054",
+				navbar: "#3AAED8",
 			},
 			borderWidth: {
 				1: "1px",
@@ -38,5 +39,8 @@ module.exports = {
 			},
 		},
 	},
-	plugins: [],
+	plugins: [require("tailwind-scrollbar")],
+	variants: {
+		scrollbar: ["dark"],
+	},
 };
